@@ -5,24 +5,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5CB18B"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="FACTORIAL CALCULATOR"
+        android:textColor="#060707"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="155dp"
         android:layout_marginTop="100dp"
-        android:text="CALCULATE" />
+        android:text="GO!"
+        android:background="@color/colorPrimary"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button"
+        android:layout_below="@id/btn"
         android:layout_marginTop="105dp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button"
+        android:layout_below="@id/btn"
         android:layout_centerHorizontal="true">
 
         <LinearLayout
@@ -42,11 +55,11 @@
     </ScrollView>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/textField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
-        android:ems="10"
+        android:ems="11"
         android:layout_marginTop="60dp"
         android:inputType="number" />
 
